@@ -81,6 +81,15 @@ We welcome pull requests (PRs). Please follow these guidelines:
 
    - Create a `.env` file in the project root.
    - Set the required environment variables as per the [README](README.md).
+  - When running locally, export variables from `.env` before starting the binary:
+
+  ```bash
+  set -a
+  source .env
+  set +a
+  ```
+
+  > `source .env` alone does not export variables to child processes.
 
 3. **Install Go dependencies**:
 
@@ -96,6 +105,12 @@ We welcome pull requests (PRs). Please follow these guidelines:
    go build
    ./paperless-gpt
    ```
+
+    Or use the helper script that exports `.env` automatically:
+
+    ```bash
+    ./build-and-run.sh
+    ```
 
 5. **Run the backend server with frontend built in**:
 
