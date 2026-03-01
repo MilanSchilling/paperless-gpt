@@ -63,7 +63,7 @@ We welcome pull requests (PRs). Please follow these guidelines:
 
 ### Prerequisites
 
-- **Go** (version 1.20 or later)
+- **Go** (version 1.24 or later)
 - **Node.js** (version 18 or later)
 - **npm** (comes with Node.js)
 - **Docker** and **Docker Compose**
